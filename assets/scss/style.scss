@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'WorkSans';
+	src: url('../fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+	position: relative;
+	background: #f9eeff;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	font-family: 'WorkSans';
+
+	.bg-top {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 35.6666%;
+		background: url(../images/background-pattern-desktop.svg) no-repeat center center /cover;
+	}
+	.faq-container {
+		width: 600px;
+		height: 567px;
+		border-radius: 15px;
+		box-shadow: -5px 12px 27px -2px #5400753f;
+		background: #fff;
+		z-index: 2;
+		padding: 56px 40px 45px;
+
+		&__title {
+			position: relative;
+			padding-left: 70px;
+			height: 88px;
+			font-weight: 700;
+			font-size: 51px;
+			line-height: 51px;
+			color: #321438;
+		
+			&:before {
+			content: '';
+			position: absolute;
+			top: 4px;
+			left: 1px;
+			width: 38px;
+			height: 38px;
+			background: url(../images/icon-star.svg)no-repeat center center /contain;
+			}
+		}
+	}
+}

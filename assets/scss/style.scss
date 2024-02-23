@@ -10,6 +10,7 @@ body {
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
+	font-family: 'WorkSans';
 
 	.bg-top {
 		position: absolute;
@@ -29,11 +30,23 @@ body {
 		padding: 56px 40px 45px;
 
 		&__title {
-			 height: 88px;
-			 font-family: 'WorkSans';
-			 font-weight: 600;
-			 font-size: 51px;
-			 line-height: 51px;
+			position: relative;
+			padding-left: 70px;
+			height: 88px;
+			font-weight: 700;
+			font-size: 51px;
+			line-height: 51px;
+			color: #321438;
+		
+			&:before {
+			content: '';
+			position: absolute;
+			top: 4px;
+			left: 1px;
+			width: 38px;
+			height: 38px;
+			background: url(../images/icon-star.svg)no-repeat center center /contain;
+			}
 		}
 	}
 }
